@@ -42,7 +42,7 @@
 		 */
 		public function get_src( $src ) {
 			Arg::_( $src, 'Source file' )->is_string()
-			   ->assert( is_file( $src ), 'Source file must be an existing file.' );
+			   ->assert( $this->is_file( $src ), 'Source file must be an existing file.' );
 
 			$type = $this->get_type( $src );
 
