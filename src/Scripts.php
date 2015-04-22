@@ -27,7 +27,7 @@
 		 *
 		 * @return Scripts
 		 */
-		public function instance( $root_path ) {
+		public static function instance( $root_path ) {
 			$instance = new self;
 
 			$instance->set_root_path( $root_path );
