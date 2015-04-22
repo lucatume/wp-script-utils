@@ -11,5 +11,8 @@
             "email": "luca@theaveragedev.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "autoload": {
+        "classmap": ["src/"]
+    }
 }
