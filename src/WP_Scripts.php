@@ -1,7 +1,7 @@
 <?php
 
 
-	class Scripts {
+	class WP_Scripts {
 
 		/**
 		 * @var self
@@ -61,10 +61,9 @@
 		 * @param $root_path
 		 */
 		public function set_root_path( $root_path ) {
-			Arg::_( $root_path, 'Root path' )->is_string()
-			   ->assert( file_exists( $root_path ), 'Root path or folder must be an existing one' );
+			Arg::_( $root_path, 'Root path' )->is_string();
 
-			if ( is_file( $root_path ) ) {
+			if ( $this->is_file( $root_path ) ) {
 				$root_path = dirname( $root_path );
 			}
 
@@ -103,6 +102,12 @@
 			$prefix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
 			return $prefix;
+		}
+
+		private function is_file( $path ) {
+			$info = pathinfo( $path );
+
+			return empty( $info['extension'] ) ? false : true;
 		}
 
 	}

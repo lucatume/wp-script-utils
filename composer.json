@@ -1,18 +1,31 @@
 {
-    "name": "lucatume/wp-script-utils",
-    "description": "Script and style utilities for WordPress projects.",
-    "require": {
-        "lucatume/args": "dev-master"
-    },
-    "license": "GPL 2.0",
-    "authors": [
-        {
-            "name": "Luca Tumedei",
-            "email": "luca@theaveragedev.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "autoload": {
-        "classmap": ["src/"]
+  "name": "lucatume/wp-script-utils",
+  "description": "Script and style utilities for WordPress projects.",
+  "type": "wordpress-muplugin",
+  "require": {
+    "lucatume/args": "dev-master",
+    "xrstf/composer-php52": "1.*"
+  },
+  "license": "GPL 2.0",
+  "authors": [
+    {
+      "name": "Luca Tumedei",
+      "email": "luca@theaveragedev.com"
     }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "classmap": ["src/"]
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "xrstf\\Composer52\\Generator::onPostInstallCmd"
+    ],
+    "post-update-cmd": [
+      "xrstf\\Composer52\\Generator::onPostInstallCmd"
+    ],
+    "post-autoload-dump": [
+      "xrstf\\Composer52\\Generator::onPostInstallCmd"
+    ]
+  }
 }

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6e96e446f6d2fdc9d402b2c82385ed19",
+    "hash": "dfafc08aa7e670a48f4d901a2c8811df",
     "packages": [
         {
             "name": "lucatume/args",
