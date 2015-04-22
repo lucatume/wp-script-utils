@@ -1,0 +1,15 @@
+{
+    "name": "lucatume/wp-script-utils",
+    "description": "Script and style utilities for WordPress projects.",
+    "require": {
+        "lucatume/args": "dev-master"
+    },
+    "license": "GPL 2.0",
+    "authors": [
+        {
+            "name": "Luca Tumedei",
+            "email": "luca@theaveragedev.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
