@@ -11,10 +11,10 @@ If using [Composer](https://getcomposer.org/) the plugin can be pulled into the 
 ## Usage
 
 ### Getting proper source
-WordPress allows developers to set the `SCRIPT_DEBUG` constant to let WordPress know that the session is a script debug one; once the `WP_Scripts` class is instantiated on a root folder scripts and styles can be pulled in their normal or minified form with no additional effort.
+WordPress allows developers to set the `SCRIPT_DEBUG` constant to let WordPress know that the session is a script debug one; once the `Scripts` class is instantiated on a root folder scripts and styles can be pulled in their normal or minified form with no additional effort.
 	
 	// initialize the class on the /assets folder
-	$scripts = WP_Scripts::instance(plugins_url('/assets',__FILE__);
+	$scripts = Scripts::instance(plugins_url('/assets',__FILE__);
 	
 	define('SCRIPT_DEBUG', true);
 	

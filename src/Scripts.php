@@ -1,10 +1,10 @@
 <?php
 
 
-	class WP_Scripts {
+	class Scripts {
 
 		/**
-		 * @var self
+		 * @var Scripts
 		 */
 		protected $instance;
 
