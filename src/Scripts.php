@@ -54,7 +54,9 @@
 
 			$prefix = $this->get_min_prefix();
 
-			return $this->root_path . str_replace( '.' . $type, $prefix . '.' . $type, $src );
+			$file_name = str_replace( '.' . $type, $prefix . '.' . $type, $src );
+
+			return $this->get( $file_name );
 		}
 
 		/**
@@ -108,6 +110,15 @@
 			$info = pathinfo( $path );
 
 			return empty( $info['extension'] ) ? false : true;
+		}
+
+		/**
+		 * @param $file_name
+		 *
+		 * @return string
+		 */
+		public function get( $file_name ) {
+			return $this->root_path . $file_name;
 		}
 
 	}

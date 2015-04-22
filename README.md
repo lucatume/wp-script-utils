@@ -18,17 +18,27 @@ WordPress allows developers to set the `SCRIPT_DEBUG` constant to let WordPress 
 	
 	define('SCRIPT_DEBUG', true);
 	
-	// will return `http://mysite/wp/wp-content/plugins/assets/css/style.css`
+	// will return `http://mysite/wp/wp-content/plugins/my-plugin/assets/css/style.css`
 	$style_src = $scripts->get_src('/css/style.css');
 	
-	// will return `http://mysite/wp/wp-content/plugins/assets/js/site.js`
+	// will return `http://mysite/wp/wp-content/plugins/my-plugin/assets/js/site.js`
 	$js_src = $scripts->get_src('/js/site.js');
 	
 	define('SCRIPT_DEBUG', true);
 	
-	// will return `http://mysite/wp/wp-content/plugins/assets/css/style.css`
+	// will return `http://mysite/wp/wp-content/plugins/my-plugin/assets/css/style.css`
 	$style_src = $scripts->get_src('/css/style.css');
 	
-	// will return `http://mysite/wp/wp-content/plugins/assets/js/site.js`
+	// will return `http://mysite/wp/wp-content/plugins/my-plugin/assets/js/site.js`
 	$js_src = $scripts->get_src('/js/site.js');
+
+### Getting a file using just relative paths
+Some files just come minified and/or are not to be scrutinized in a debug session, that's why the `get` method is there
+
+	define('SCRIPT_DEBUG', true);
 	
+	// will return `http://mysite/wp/wp-content/plugins/my-plugin/assets/vendor/vendor-style.min.css`
+	$style_src = $scripts->get_src('/vendor/vendor-style.min.css');
+	
+	// will return `http://mysite/wp/wp-content/plugins/my-plugin/assets/vendor/vendor-script.min.js`
+	$js_src = $scripts->get_src('/vendor/vendor-script.min.js');
