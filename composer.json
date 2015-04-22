@@ -3,7 +3,7 @@
   "description": "Script and style utilities for WordPress projects.",
   "type": "wordpress-muplugin",
   "require": {
-    "lucatume/args": "dev-master",
+    "lucatume/args": "~0.1",
     "xrstf/composer-php52": "1.*",
     "composer/installers": "~1.0"
   },

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2806b5526abcf62494965296118cfdf2",
+    "hash": "5e750736c1eba6a8dc585d0bed90607a",
     "packages": [
         {
             "name": "composer/installers",
@@ -103,16 +103,16 @@
         },
         {
             "name": "lucatume/args",
-            "version": "dev-master",
+            "version": "0.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lucatume/args.git",
-                "reference": "0be8ba515ad238eb0bec6ddd1602da51c6c7171b"
+                "reference": "cf66bb715436f6d16fe911042707aafad3e56746"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lucatume/args/zipball/0be8ba515ad238eb0bec6ddd1602da51c6c7171b",
-                "reference": "0be8ba515ad238eb0bec6ddd1602da51c6c7171b",
+                "url": "https://api.github.com/repos/lucatume/args/zipball/cf66bb715436f6d16fe911042707aafad3e56746",
+                "reference": "cf66bb715436f6d16fe911042707aafad3e56746",
                 "shasum": ""
             },
             "require": {
@@ -139,7 +139,7 @@
                 }
             ],
             "description": "A PHP 5.2 compatible arguments handling library.",
-            "time": "2015-04-20 19:02:17"
+            "time": "2015-04-20 18:34:02"
         },
         {
             "name": "xrstf/composer-php52",
@@ -177,9 +177,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "lucatume/args": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
