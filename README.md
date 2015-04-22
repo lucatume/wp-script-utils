@@ -18,17 +18,17 @@ WordPress allows developers to set the `SCRIPT_DEBUG` constant to let WordPress 
 	
 	define('SCRIPT_DEBUG', true);
 	
-	// will return `http:://mysite/wp/wp-content/plugins/assets/css/style.css`
+	// will return `http://mysite/wp/wp-content/plugins/assets/css/style.css`
 	$style_src = $scripts->get_src('/css/style.css');
 	
-	// will return `http:://mysite/wp/wp-content/plugins/assets/js/site.js`
+	// will return `http://mysite/wp/wp-content/plugins/assets/js/site.js`
 	$js_src = $scripts->get_src('/js/site.js');
 	
-	define('SCRIPT_DEBUG', false);
+	define('SCRIPT_DEBUG', true);
 	
-	// will return `http:://mysite/wp/wp-content/plugins/assets/css/style.min.css`
+	// will return `http://mysite/wp/wp-content/plugins/assets/css/style.css`
 	$style_src = $scripts->get_src('/css/style.css');
 	
-	// will return `http:://mysite/wp/wp-content/plugins/assets/js/site.min.js`
+	// will return `http://mysite/wp/wp-content/plugins/assets/js/site.js`
 	$js_src = $scripts->get_src('/js/site.js');
 	
