@@ -8,5 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'xrstf\\Composer52' => array($vendorDir . '/xrstf/composer-php52/lib'),
     'tad_' => array($vendorDir . '/lucatume/args/src'),
+    'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src'),
     'Arg' => array($vendorDir . '/lucatume/args/src'),
 );
