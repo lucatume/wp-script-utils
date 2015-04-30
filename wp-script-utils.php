@@ -30,6 +30,10 @@ function js_backbone_utilities_load() {
 	}
 }
 
-add_action( 'admin_init', 'js_backbone_utilities_load' );
-add_action( 'admin_enqueue_scripts', 'js_backbone_main_enqueue', 999 );
-add_action( 'wp_enqueue_scripts', 'js_backbone_main_enqueue', 999 );
+function js_hooks_enqueue(){
+	wp_enqueue_script('js-hooks');
+}
+
+add_action( 'init', 'js_backbone_utilities_load' );
+add_action( 'admin_enqueue_scripts', 'js_hooks_enqueue', 999 );
+add_action( 'wp_enqueue_scripts', 'js_hooks_enqueue', 999 );
